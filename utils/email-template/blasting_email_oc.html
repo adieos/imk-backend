@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify Your Account</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+      .header-image {
+        width: 100%;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(226, 55, 55, 0.1);
+        border-radius: 5px;
+      }
+      h1 {
+        color: #6c41af;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #37384c;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      a {
+        color: #6c41af;
+        text-decoration: none;
+      }
+      .button {
+        color: #ffffff !important;
+        text-decoration: none;
+        padding: 12px 30px;
+        background-color: #2e74e5;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 10px;
+        transition: background-color 0.3s ease;
+      }
+      .button:hover {
+        background-color: #1a5ab8;
+      }
+
+      .list-acara {
+        color: #37384c;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .list-acara li {
+        margin-bottom: 2px;
+      }
+
+      .imageDesktop,
+      .imageMobile {
+        width: 100%;
+      }
+      @media (max-width: 768px) {
+        .imageDesktop {
+          display: none;
+        }
+        .imageMobile {
+          display: block;
+          width: 100%;
+        }
+      }
+      @media (min-width: 769px) {
+        .imageDesktop {
+          display: block;
+          width: 100%;
+        }
+        .imageMobile {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://ilits2025-dev.s3.ap-southeast-3.amazonaws.com/mailer/header-desktop.png"
+        class="header-image imageDesktop"
+        alt="Desktop header image"
+      />
+      <img
+        src="https://ilits2025-dev.s3.ap-southeast-3.amazonaws.com/mailer/header-mobile.png"
+        class="header-image imageMobile"
+        alt="Mobile header image"
+      />
+
+      <h1>Live Bimbel INI LHO ITS! 2025</h1>
+      <p>Halo, Sobat Aspirator! 👋🏼</p>
+      <p>
+        Seperti yang kalian ketahui, Ini Lho ITS! 2025 punya sub-event yang
+        bernama Bimbel x Welcome Ini Lho ITS! 2025 nah besok dan lusa adalah
+        pelaksanaan Bimbel dengan Pembahasan Soal subtes TPS & TKA bersama
+        pemateri keren!
+      </p>
+      <p>
+        Jangan lupa hadir ya! Karena kalian berkesempatan untuk mendapatkan
+        awarding peserta teraktif dan atau peserta dengan post-test tertinggi
+        loh! Jadi dikerjain yaa pre-test dan post-testnya nantii
+      </p>
+      <ul class="list-acara">
+        <li>🗓 Sabtu & Minggu, 4 & 5 Januari 2025</li>
+        <li>⏰ 09.00 - 17.00 WIB</li>
+        <li>
+          🔗 Pre-Test :
+          <a href="https://its.id/m/PreTestBimbelILITS25" target="_blank"
+            >https://its.id/m/PreTestBimbelILITS25</a
+          >
+        </li>
+        <li>📍 Zoom Meeting</li>
+        <li>
+          DAY 1 : <a href="{{ .LinkDay1 }}" target="_blank">{{ .LinkDay1 }}</a>
+        </li>
+        <li>
+          DAY 2 : <a href="{{ .LinkDay2 }}" target="_blank">{{ .LinkDay2 }}</a>
+        </li>
+      </ul>
+      <p>See you, Sobat Aspirator!👋🏻🧩</p>
+      <p>
+        ✨Kenali dirimu, kenali masa depanmu di INI LHO ITS! 2025✨ <br />
+        #INILHOITS2025 <br />
+        #ITSSurabaya <br />
+        #IntegrasiAspirasi <br />
+      </p>
+    </div>
+  </body>
+</html>

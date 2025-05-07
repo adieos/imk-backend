@@ -1,0 +1,23 @@
+[
+    {
+      "id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+      "choice": "A",
+      "question": "Riset fenomena Alam & Kesehatan"
+    },
+    {
+      "id": "b1c2d3e4-f5a6-7890-2345-67890abcdef1",
+      "choice": "B",
+      "question": "Prinsip Mekanika"
+    },
+    {
+      "id": "c1d2e3f4-a5b6-7890-3456-78901abcdef2",
+      "choice": "C",
+      "question": "Prinsip Elektronika, Komputasi, dan Sistem Informasi"
+    },
+    {
+      "id": "d1e2f3a4-b5c6-7890-4567-89012abcdef3",
+      "choice": "D",
+      "question": "Sosial Demografi, Ekonomi & Kesenian"
+    }
+  ]
+  

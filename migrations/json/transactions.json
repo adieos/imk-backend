@@ -1,0 +1,60 @@
+[
+    {
+        "id":"0fd00074-5da3-4a30-992b-f51604e38164",
+        "user_id":"2e8cf24c-94a8-476f-9513-53692476af45",
+        "product_id":"1a48f90e-88e9-4a92-a9d6-bf256fabd613",
+        "major_id": "6cc41aa2-70b6-4a22-85d7-7e02a0abb1fc",
+        "forda_id": null,
+        "code":"ABC123",
+        "amount_paid":0,
+        "type":"oc",
+        "status":"PENDING",
+        "invoice_url": ""
+    },
+    {
+        "id":"ec7e255a-ad5d-4436-aea4-487ae81f16e2",
+        "user_id":"2e8cf24c-94a8-476f-9513-53692476af45",
+        "product_id":"1a48f90e-88e9-4a92-a9d6-bf256fabd613",
+        "major_id": "6cc41aa2-70b6-4a22-85d7-7e02a0abb1fc",
+        "forda_id": null,
+        "code":"DEF123",
+        "amount_paid":0,
+        "type":"oc",
+        "status":"PENDING",
+        "invoice_url": ""
+    },
+    {
+        "id":"7ee14b46-82cd-4544-830f-cc7dba5ebb06",
+        "user_id":"2e8cf24c-94a8-476f-9513-53692476af45",
+        "product_id":"1a48f90e-88e9-4a92-a9d6-bf256fabd613",
+        "major_id": "6cc41aa2-70b6-4a22-85d7-7e02a0abb1fc",
+        "forda_id": null,
+        "code":"GHI123",
+        "amount_paid":2000,
+        "type":"oc",
+        "status":"PAID",
+        "invoice_url": ""
+    },
+    {
+        "id":"96191f32-8ed4-45b7-9aac-873bf73d0877",
+        "user_id":"2e8cf24c-94a8-476f-9513-53692476af45",
+        "product_id":"1a48f90e-88e9-4a92-a9d6-bf256fabd613",
+        "major_id": "6cc41aa2-70b6-4a22-85d7-7e02a0abb1fc",
+        "code":"JKL123",
+        "amount_paid":2000,
+        "type":"oc",
+        "status":"PAID",
+        "invoice_url": ""
+    },
+    {
+        "id":"8d8e4eb4-40b7-482b-9a20-5843b033fa04",
+        "user_id":"2e8cf24c-94a8-476f-9513-53692476af45",
+        "product_id": null,
+        "major_id": null,
+        "forda_id": "4b79d352-0c66-4805-baca-0882d6d422f1",
+        "amount_paid":2000,
+        "type":"wsn",
+        "status":"PENDING",
+        "invoice_url": ""
+    }
+]

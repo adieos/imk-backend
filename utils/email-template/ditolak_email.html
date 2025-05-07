@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohon Maaf, Pendaftaran Open Campus kamu Belum Diterima</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(226, 55, 55, 0.1);
+      border-radius: 5px;
+    }
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .button {
+      color: #fff !important; 
+      text-decoration: none; 
+      padding: 10px 20px; 
+      background-color: #007bff; 
+      border-radius: 5px; 
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mohon Maaf, Pendaftaran Open Campus kamu Belum Diterima</h1>
+    <p>Halo, {{ .Name }}</p>
+    <p>Terima kasih telah mendaftar untuk Open Campus. Kami menghargai waktu dan usaha yang telah kamu curahkan. Namun, dengan berat hati kami harus menginformasikan bahwa pendaftaran kamu belum dapat kami terima untuk Open Campus kali ini.</p>
+    <div align="center">
+      <a href="{{ .Revision}}" class="button">Halaman Utama</a>
+    </div>
+    <p>Kami berharap dapat bertemu di kesempatan lainnya. Terima kasih atas pengertiannya.</p>
+  </div>
+</body>
+</html>

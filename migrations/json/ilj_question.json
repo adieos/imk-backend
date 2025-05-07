@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0229a39e-8904-4991-91d5-0fd897e54e18",
+    "iljmajor_id": "76798e20-f6df-4599-ba34-2a8a4dbf298c",
+    "major_id": "6cc41aa2-70b6-4a22-85d7-7e02a0abb1fc",
+    "submajor_id": "fc3a22cd-cf5b-48c3-ada7-70aca05b34c2",
+    "question": "Berapakah 9 + 10?"
+  },
+  {
+    "id": "1ae847a2-d57e-498a-b0e9-41ed17c61044",
+    "iljmajor_id": "76798e20-f6df-4599-ba34-2a8a4dbf298c",
+    "major_id": "fc3a22cd-cf5b-48c3-ada7-70aca05b34c2",
+    "submajor_id": null,
+    "question": "Siapakah Ghufron Hassan Rumrowi"
+  },
+  {
+    "id": "c4cf0615-6636-45f1-a842-e75da6560318",
+    "iljmajor_id": "76798e20-f6df-4599-ba34-2a8a4dbf298c",
+    "major_id": "fc3a22cd-cf5b-48c3-ada7-70aca05b34c2",
+    "submajor_id": null,
+    "question": "Apa divisi paling keren di ilits"
+  }
+]

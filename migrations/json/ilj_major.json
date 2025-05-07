@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1111c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+    "faculty_choice": "FSAD_A",
+    "question": "Riset fenomena alam dan hukum-hukum dasar keilmiahan"
+  },
+  {
+    "id": "2222c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+    "faculty_choice": "FTSPK_A",
+    "question": "Riset kebumian dan pengolahan data spasial"
+  },
+  {
+    "id": "3333c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+    "faculty_choice": "FKK_A",
+    "question": "Riset kondisi kesehatan masyarakat dan teknologi medis"
+  },
+  {
+    "id": "4444c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+    "faculty_choice": "FTK_A",
+    "question": "Riset kemaritiman dan nautika"
+  },
+  {
+    "id": "5555c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "b1c2d3e4-f5a6-7890-2345-67890abcdef1",
+    "faculty_choice": "FTIRS_B",
+    "question": "Mekanisme mesin dan dunia industri"
+  },
+  {
+    "id": "6666c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "b1c2d3e4-f5a6-7890-2345-67890abcdef1",
+    "faculty_choice": "FTSPK_B",
+    "question": "Konstruksi dan perancangan bangunan"
+  },
+  {
+    "id": "7777c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "b1c2d3e4-f5a6-7890-2345-67890abcdef1",
+    "faculty_choice": "FTK_B",
+    "question": "Mekanisme mesin-mesin kapal"
+  },
+  {
+    "id": "8888c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "c1d2e3f4-a5b6-7890-3456-78901abcdef2",
+    "faculty_choice": "FKK_FTEIC_C",
+    "question": "Sistem kelistrikan & elektronika"
+  },
+  {
+    "id": "9999c3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "c1d2e3f4-a5b6-7890-3456-78901abcdef2",
+    "faculty_choice": "FTEIC_C",
+    "question": "Komputasi, pemrosesan informasi & rekayasa sistem"
+  },
+  {
+    "id": "aaaac3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "d1e2f3a4-b5c6-7890-4567-89012abcdef3",
+    "faculty_choice": "FDKBD_D",
+    "question": "Kesenian dan desain ruangan mapupun karya seni"
+  },
+  {
+    "id": "bbbcc3d4-e5f6-7890-1234-56789abcdef0",
+    "iljfaculty_id": "d1e2f3a4-b5c6-7890-4567-89012abcdef3",
+    "faculty_choice": "FDKBD_D",
+    "question": "Manajemen dan statistika bisnis serta kewirausahaan"
+  }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Artum Kitt",
+        "description":"Tiket OC + Lanyard + Stiker + Keychain",
+        "price":160000
+    },
+    {
+        "name":"Inaspir Kitt",
+        "description":"Tiket OC + Lanyard + Stiker",
+        "price":147000
+    },
+    {
+        "name":"Ticket Only",
+        "description":"Tiket OC",
+        "price":120000
+    }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id":"3f9cf24c-94a8-476f-9513-53692476af46",
+    "name": "Shabrina Amalia Safaana",
+    "email": "shab1234@gmail.com",
+    "password": "shabaja",
+    "instansi": "SMAN 3 Samarinda",
+    "no_telp": "08123456789",
+    "info_from": "Instagram",
+    "province_id": "aaa7a3d6-6f1d-4b6b-9013-d24b0baa064b",
+    "jenjang": "SMA",
+    "role": "user",
+    "is_verified": true
+  },
+  {
+    "id":"2e8cf24c-94a8-476f-9513-53692476af45",
+    "name": "Paundra Pujo Darmawan",
+    "email": "testing@gmail.com",
+    "password": "pujoganteng123",
+    "instansi": "SMAN 1 KEDIRI",
+    "no_telp": "081234567890",
+    "info_from": "Instagram",
+    "province_id": "67f5c52c-7b45-4057-ba1d-9b2bd7ae9c7e",
+    "jenjang": "SMA",
+    "role": "admin",
+    "is_verified":true
+  },
+  {
+    "id": "9ae2bd9d-f51b-4063-86ce-fdfc90523ef2",
+    "name": "Ghufron Hassan Rumrowi",
+    "email": "ghufron123@gmail.com",
+    "password": "AkuSigma999",
+    "instansi": "SMA ILITS 25 Surabaya",
+    "no_telp": "081234567890",
+    "info_from": "Friend",
+    "province_id": "23a772cc-49b4-41a3-9c79-3486dcedf3ae", 
+    "jenjang": "SMA",
+    "role": "user",
+    "is_verified": true
+  },
+  {
+    "id": "119a158d-c5e8-4754-96d3-e8e054b67fb1",
+    "name": "Mirai Aseli Ngantuk",
+    "email": "miraicantsleep@gmail.com",
+    "password": "thanksinfolanjutturu",
+    "instansi": "SMA Turu Brutal",
+    "no_telp": "081234567890",
+    "info_from": "Friend",
+    "province_id": "23a772cc-49b4-41a3-9c79-3486dcedf3ae", 
+    "jenjang": "SMA",
+    "role": "user",
+    "is_verified": true
+  }
+]
