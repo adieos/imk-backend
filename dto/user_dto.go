@@ -2,9 +2,6 @@ package dto
 
 import (
 	"errors"
-
-	"github.com/adieos/imk-backend/entity"
-	"github.com/adieos/imk-backend/utils/pagination"
 )
 
 const (
@@ -71,111 +68,22 @@ var (
 
 type (
 	UserCreateRequest struct {
-		Name             string `json:"name" form:"name" binding:"required,max=700"`
-		Email            string `json:"email" form:"email" binding:"required,max=100"`
-		Password         string `json:"password" form:"password" binding:"required,max=100"`
-		Institution      string `json:"institusi" form:"institusi" binding:"required,max=400"`
-		TelpNumber       string `json:"no_telp" form:"no_telp" binding:"required,max=30"`
-		InfoFrom         string `json:"info_from" form:"info_from" binding:"required,max=200"`
-		Province         string `json:"asal_provinsi" form:"asal_provinsi" binding:"required,max=100"`
-		EducationalLevel string `json:"jenjang" form:"jenjang" binding:"required,max=100"`
+		Name     string `json:"name" form:"name" binding:"required,max=700"`
+		Email    string `json:"email" form:"email" binding:"required,max=100"`
+		Password string `json:"password" form:"password" binding:"required,max=100"`
 	}
 
 	UserResponse struct {
-		Name          string  `json:"name" form:"name" binding:"required"`
-		Email         string  `json:"email" form:"email" binding:"required"`
-		Instansi      string  `json:"instansi" form:"instansi" binding:"required"`
-		NoTelp        string  `json:"no_telp" form:"no_telp" binding:"required"`
-		InfoFrom      string  `json:"info_from" form:"info_from" binding:"required"`
-		Provinsi      string  `json:"asal_provinsi" form:"asal_provinsi" binding:"required"`
-		Jenjang       string  `json:"jenjang" form:"jenjang" binding:"required"`
-		OCId          *string `json:"oc"`
-		OCStatus      *string `json:"oc_status"`
-		WSNId         *string `json:"wsn"`
-		WSNStatus     *string `json:"wsn_status"`
-		WSNCode       string  `json:"wsn_code"`
-		WSNCodeStatus string  `json:"wsn_code_status"`
-		ILJMajor      string  `json:"ilj_major"`
-		ILJSubmajor   string  `json:"ilj_submajor"`
-		Role          string  `json:"role"`
-	}
-
-	UserPaginationResponse struct {
-		Data []UserResponse `json:"data"`
-		pagination.Meta
-	}
-
-	GetAllUserRepositoryResponse struct {
-		Users []entity.User
-		pagination.Meta
-	}
-
-	UserUpdateRequest struct {
-		Name          string `json:"name" form:"name" binding:"max=700"`
-		Instansi      string `json:"instansi" form:"instansi" binding:"max=400"`
-		No_Telp       string `json:"no_telp" form:"no_telp" binding:"max=100"`
-		Info_From     string `json:"info_from" form:"info_from" binding:"max=100"`
-		Asal_Provinsi string `json:"asal_provinsi" form:"asal_provinsi" binding:"max=100"`
-		Jenjang       string `json:"jenjang" form:"jenjang" binding:"max=100"`
-	}
-
-	UserUpdateResponse struct {
-		Name          string `json:"name" form:"name"`
-		Email         string `json:"email" form:"email"`
-		Instansi      string `json:"instansi" form:"instansi"`
-		No_Telp       string `json:"no_telp" form:"no_telp"`
-		Info_From     string `json:"info_from" form:"info_from"`
-		Asal_Provinsi string `json:"asal_provinsi" form:"asal_provinsi"`
-		Jenjang       string `json:"jenjang" form:"jenjang"`
-	}
-
-	SendVerificationEmailRequest struct {
-		Email string `json:"email" form:"email" binding:"required,max=100"`
-	}
-
-	VerifyEmailRequest struct {
-		Token string `json:"token" form:"token" binding:"required"`
-	}
-
-	VerifyEmailResponse struct {
-		Email      string `json:"email"`
-		IsVerified bool   `json:"is_verified"`
+		Name  string `json:"name" form:"name" binding:"required"`
+		Email string `json:"email" form:"email" binding:"required"`
 	}
 
 	UserLoginRequest struct {
-		Email    string `json:"email" form:"email" binding:"required"`
-		Password string `json:"password" form:"password" binding:"required"`
+		Email    string `json:"email" form:"email" binding:"required,max=100"`
+		Password string `json:"password" form:"password" binding:"required,max=100"`
 	}
 
 	UserLoginResponse struct {
-		Token string `json:"token"`
-		Role  string `json:"role"`
-	}
-
-	UpdateStatusIsVerifiedRequest struct {
-		UserId     string `json:"user_id" form:"user_id" binding:"required"`
-		IsVerified bool   `json:"is_verified" form:"is_verified"`
-	}
-
-	ResetPasswordRequest struct {
-		NewPassword string `json:"new_password" binding:"required"`
-	}
-
-	ForgetPasswordRequest struct {
-		Email string `json:"email"`
-	}
-
-	MoodleResponse struct {
-		Username string `json:"username"`
-		Password string `json:"password"`
-		Ruangan  string `json:"ruangan"`
-		Sesi     string `json:"sesi"`
-	}
-
-	MoodleWSNResponse struct {
-		Username string `json:"username"`
-		Password string `json:"password"`
-		Sesi     string `json:"sesi"`
-		Forda    string `json:"forda"`
+		Token string `json:"token" form:"token" binding:"required,max=100"`
 	}
 )

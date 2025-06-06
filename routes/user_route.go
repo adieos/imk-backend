@@ -13,11 +13,6 @@ func User(route *gin.Engine, userController controller.UserController, jwtServic
 		// User
 		routes.POST("", userController.Register)
 		routes.POST("/login", userController.Login)
-		routes.PUT("/update", middleware.Authenticate(jwtService), userController.Update)
-		routes.POST("/sendmail", userController.SendVerificationEmail)
-		routes.GET("/verify", userController.VerifyEmail)
 		routes.GET("/me", middleware.Authenticate(jwtService), userController.Me)
-		routes.POST("/reset", userController.ResetPassword)
-		routes.POST("/forget", userController.ForgetPassword)
 	}
 }
