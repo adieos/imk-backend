@@ -105,12 +105,15 @@ func main() {
 		// Implementation Dependency Injection
 		// Repository
 		userRepository repository.UserRepository = repository.NewUserRepository(db)
+		bsRepository   repository.BSRepository   = repository.NewBSRepository(db)
 
 		// Service
 		userService service.UserService = service.NewUserService(userRepository, jwtService)
+		bsService   service.BSService   = service.NewBSService(bsRepository, jwtService)
 
 		// Controller
 		userController controller.UserController = controller.NewUserController(userService)
+		bsController   controller.BSController   = controller.NewBSController(bsService)
 	)
 	fmt.Println("Services initialized")
 
@@ -139,6 +142,7 @@ func main() {
 	fmt.Println("Setting up routes...")
 	// routes
 	routes.User(server, userController, jwtService)
+	routes.BS(server, bsController, jwtService)
 
 	server.Static("/assets", "./assets")
 	port := os.Getenv("PORT")
