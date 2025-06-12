@@ -49,7 +49,7 @@ func (r *userRepository) GetUserById(ctx context.Context, tx *gorm.DB, userId st
 	}
 
 	var user entity.User
-	if err := tx.WithContext(ctx).Preload("Province").Where("id = ?", userId).Take(&user).Error; err != nil {
+	if err := tx.WithContext(ctx).Where("id = ?", userId).Take(&user).Error; err != nil {
 		return entity.User{}, err
 	}
 
