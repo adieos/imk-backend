@@ -84,6 +84,7 @@ type (
 	}
 
 	UserLoginResponse struct {
-		Token string `json:"token" form:"token" binding:"required,max=100"`
+		Token    string `json:"token" form:"token" binding:"required,max=100"`
+		Username string `json:"username"`
 	}
 )

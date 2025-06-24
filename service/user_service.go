@@ -100,6 +100,7 @@ func (s *userService) Verify(ctx context.Context, req dto.UserLoginRequest) (dto
 	token := s.jwtService.GenerateTokenUser(user.ID.String(), "USER")
 
 	return dto.UserLoginResponse{
-		Token: token,
+		Username: user.Name,
+		Token:    token,
 	}, nil
 }
