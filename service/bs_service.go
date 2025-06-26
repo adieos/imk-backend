@@ -206,6 +206,7 @@ func (s *bSService) UpdateBS(ctx context.Context, req dto.BSUpdateRequest) (dto.
 	bs.Contact = req.Phone
 	bs.Description = req.Description
 	bs.AcceptAll = req.AcceptAll
+	bs.Status = req.Status
 	err = s.BSRepo.DeleteBSAcceptsByBankID(ctx, nil, bs.ID.String())
 	if err != nil {
 		return dto.BSResponse{}, err

@@ -69,6 +69,7 @@ type (
 		Description        string        `json:"description"`          // Description should be optional
 		AcceptAll          bool          `json:"accept_all"`           // Accept all types of waste
 		AcceptedWasteTypes []BSWasteType `json:"accepted_waste_types"` // Accepted waste types should be a list of strings
+		Status             string        `json:"status"`
 	}
 
 	BSResponse struct {
