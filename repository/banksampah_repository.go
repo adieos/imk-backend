@@ -19,6 +19,7 @@ type (
 		ChangeStatusBS(ctx context.Context, tx *gorm.DB, bsId string, status string) (entity.BankSampah, error)
 		GetBSAccepts(ctx context.Context, tx *gorm.DB, bsId string) ([]entity.Accept, error)
 		CreateBSAccept(ctx context.Context, tx *gorm.DB, accept entity.Accept) (entity.Accept, error)
+		DeleteBSAcceptsByBankID(ctx context.Context, tx *gorm.DB, bankID string) error
 	}
 
 	bsRepository struct {
@@ -145,4 +146,12 @@ func (r *bsRepository) CreateBSAccept(ctx context.Context, tx *gorm.DB, accept e
 	}
 
 	return accept, nil
+}
+
+func (r *bsRepository) DeleteBSAcceptsByBankID(ctx context.Context, tx *gorm.DB, bankID string) error {
+	db := r.db
+	if tx != nil {
+		db = tx
+	}
+	return db.Where("bank_sampah_id = ?", bankID).Delete(&entity.Accept{}).Error
 }

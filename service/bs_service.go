@@ -206,7 +206,10 @@ func (s *bSService) UpdateBS(ctx context.Context, req dto.BSUpdateRequest) (dto.
 	bs.Contact = req.Phone
 	bs.Description = req.Description
 	bs.AcceptAll = req.AcceptAll
-
+	err = s.BSRepo.DeleteBSAcceptsByBankID(ctx, nil, bs.ID.String())
+	if err != nil {
+		return dto.BSResponse{}, err
+	}
 	// Update accepted waste types if provided
 	if len(req.AcceptedWasteTypes) > 0 {
 		for _, wasteType := range req.AcceptedWasteTypes {
